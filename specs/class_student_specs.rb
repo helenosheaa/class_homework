@@ -1,5 +1,5 @@
 require("minitest/autorun")
-require_relative("../class")
+require_relative("../class_student")
 
 class StudentTest < Minitest::Test
 

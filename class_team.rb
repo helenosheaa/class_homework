@@ -29,13 +29,12 @@ class Team
     @players.push(new_player)
   end
 
-  def find_player_by_name(team, players)
+  def find_player_by_name(players, name)
     for player_name in @players
       if player_name == name
         return player_name
       end
     end
-    return nil
   end
 
 end

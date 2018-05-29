@@ -32,7 +32,7 @@ class TeamTest < Minitest::Test
 
   def test_find_player_by_name
     team = Team.new("WKU", ["Kyle Bailey","Gunner Britton","Will Bush","Demetrius Cain","Nicholas Coffey", "Roger Cray"],"Mike Sanford Jr.")
-    player = find_player_by_name("Kyle Bailey")
+    team.players.find_player_by_name("Kyle Bailey")
     assert_equal(["Kyle Bailey"], team.players())
   end
 
